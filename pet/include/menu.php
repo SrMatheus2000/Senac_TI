@@ -3,7 +3,7 @@
     <form class="menu" method="get">
         <input type="hidden" name="menu" value="inicio">
         <div class="btnhome">
-            <input type="image" src="img/home.png" alt="Início" title="Início" />
+            <input type="image" src="img/home.png" alt="Início" title="Início" height="40px" width="40px"/>
         </div>
     </form>
 </div>

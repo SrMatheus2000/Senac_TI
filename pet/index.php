@@ -57,7 +57,7 @@
 			<div class="container">
 				<h4>
 					<img src="img/osso-footer.png"/>
-					Rua Docs, 1331 - Sala 002
+					<text style="vertical-align: middle;">Rua Docs, 1331 - Sala 002</text>
 				</h4>
 			</div>
 		</div>
