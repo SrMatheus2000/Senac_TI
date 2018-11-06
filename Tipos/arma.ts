@@ -1,7 +1,7 @@
 class arma {
-    private calibre:string
-    private marca:string
-    private tipo:string
+    // private calibre:string
+    // private marca:string
+    // private tipo:string
     private capacidade:number
     private projeteisNoPente:number
 
