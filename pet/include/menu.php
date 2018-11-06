@@ -3,7 +3,12 @@
     <form class="menu" method="get">
         <input type="hidden" name="menu" value="inicio">
         <div class="btnhome">
-            <input type="image" src="img/home.png" alt="Início" title="Início" height="40px" width="40px"/>
+            <!-- <input type="image" src="img/home.png" alt="Início" title="Início" height="40px" width="40px"/> -->
+            <a href="?menu=inicio" width="200px">
+                <center>
+                    <img src="img/home.png" alt="Início" title="Início" height="25px">
+                </center>
+            </a>
         </div>
     </form>
 </div>
