@@ -1,0 +1,45 @@
+.hoje{
+    border: black 1px solid;
+    height: 600px;
+}
+
+.hoje h1{
+    margin-top: 200px;
+    font-size: 75px;
+    text-shadow: 
+        -1px 0 #FFF,
+        0 1px #FFF,
+        1px 0 #FFF,
+        0 -1px #FFF;
+}
+
+.hoje h2{
+    font-size: 70px;
+    text-shadow: 
+        -1px 0 #FFF,
+        0 1px #FFF,
+        1px 0 #FFF,
+        0 -1px #FFF;
+}
+
+.forecast div{
+    border: black 1px solid;
+    height: 200px;
+}
+
+.forecast div h1{
+    margin-top: 50px;
+    text-shadow: 
+        -1px 0 #FFF,
+        0 1px #FFF,
+        1px 0 #FFF,
+        0 -1px #FFF;
+}
+
+.forecast div h3 {
+    text-shadow:
+        -1px 0 #FFF,
+        0 1px #FFF,
+        1px 0 #FFF,
+        0 -1px #FFF;
+}

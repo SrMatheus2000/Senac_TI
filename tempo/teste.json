@@ -1,0 +1,94 @@
+{
+    "by": "woeid",
+    "valid_key": false,
+    "results": {
+        "temp": 23,
+        "date": "06/11/2018",
+        "time": "19:34",
+        "condition_code": "26",
+        "description": "Tempo nublado",
+        "currently": "dia",
+        "cid": "",
+        "city": "Montenegro,",
+        "img_id": "26",
+        "humidity": "75",
+        "wind_speedy": "25.75 km/h",
+        "sunrise": "6:28 am",
+        "sunset": "7:51 pm",
+        "condition_slug": "cloud",
+        "city_name": "Montenegro",
+        "forecast": [{
+            "date": "06/11",
+            "weekday": "Ter",
+            "max": "27",
+            "min": "16",
+            "description": "Parcialmente nublado",
+            "condition": "cloudly_day"
+        }, {
+            "date": "07/11",
+            "weekday": "Qua",
+            "max": "25",
+            "min": "17",
+            "description": "Parcialmente nublado",
+            "condition": "cloudly_day"
+        }, {
+            "date": "08/11",
+            "weekday": "Qui",
+            "max": "28",
+            "min": "13",
+            "description": "Ensolarado com muitas nuvens",
+            "condition": "cloudly_day"
+        }, {
+            "date": "09/11",
+            "weekday": "Sex",
+            "max": "30",
+            "min": "13",
+            "description": "Ensolarado",
+            "condition": "clear_day"
+        }, {
+            "date": "10/11",
+            "weekday": "Sáb",
+            "max": "30",
+            "min": "18",
+            "description": "Tempestades",
+            "condition": "storm"
+        }, {
+            "date": "11/11",
+            "weekday": "Dom",
+            "max": "32",
+            "min": "21",
+            "description": "Tempo nublado",
+            "condition": "cloud"
+        }, {
+            "date": "12/11",
+            "weekday": "Seg",
+            "max": "32",
+            "min": "25",
+            "description": "Tempo nublado",
+            "condition": "cloud"
+        }, {
+            "date": "13/11",
+            "weekday": "Ter",
+            "max": "30",
+            "min": "23",
+            "description": "Tempestades",
+            "condition": "storm"
+        }, {
+            "date": "14/11",
+            "weekday": "Qua",
+            "max": "28",
+            "min": "23",
+            "description": "Tempestades",
+            "condition": "storm"
+        }, {
+            "date": "15/11",
+            "weekday": "Qui",
+            "max": "22",
+            "min": "18",
+            "description": "Ensolarado com muitas nuvens",
+            "condition": "cloudly_day"
+        }]
+    },
+    "execution_time": 0.0,
+    "from_cache": true
+}
