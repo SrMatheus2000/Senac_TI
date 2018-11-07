@@ -1,22 +1,30 @@
 import arma from "./arma";
 
-export class metralhadora extends arma {
+export default class metralhadora extends arma {
+    private tirosPorDisparo: number;
 
-   public rajada() {
+    constructor(projeteis: number, capacidade: number, tirosPorDisparo: number) {
+        super(projeteis, capacidade);
+        this.projeteisNoPente = projeteis;
+        this.capacidade = capacidade;
+        this.tirosPorDisparo = tirosPorDisparo;
+    }
 
-    //    for (let i = 0; i < 3; i++) {
-    //        this.atirar()
-    //    }
+    public atirar() {
+        // for (let i = 0; i < 3; i++) {
+        //     this.atirar()
+        // }
 
-       if (this.projeteisNoPente == 0)
-           console.log("Não ha balas, por favor recarregue")
-       else {
-           for (let i = 0; i < 3; i++){
-               this.projeteisNoPente -= 1
-               console.log("BANG")
-           }
-           console.log("Você ainda tem " + this.projeteisNoPente + " balas em seu pente!")
-       }
-       
-   }
+        for (let i = 0; i < this.tirosPorDisparo; i++) {
+            if (this.projeteisNoPente == 0){
+                console.log("Não ha balas, por favor recarregue");
+                return
+            }
+            else {
+                this.projeteisNoPente -= 1;
+                console.log("BANG");
+            }
+        }
+        console.log("Você ainda tem " + this.projeteisNoPente + " balas em seu pente!");
+    }
 }

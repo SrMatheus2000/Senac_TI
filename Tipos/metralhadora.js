@@ -16,23 +16,29 @@ exports.__esModule = true;
 var arma_1 = require("./arma");
 var metralhadora = /** @class */ (function (_super) {
     __extends(metralhadora, _super);
-    function metralhadora() {
-        return _super !== null && _super.apply(this, arguments) || this;
+    function metralhadora(projeteis, capacidade, tirosPorDisparo) {
+        var _this = _super.call(this, projeteis, capacidade) || this;
+        _this.projeteisNoPente = projeteis;
+        _this.capacidade = capacidade;
+        _this.tirosPorDisparo = tirosPorDisparo;
+        return _this;
     }
-    metralhadora.prototype.rajada = function () {
-        //    for (let i = 0; i < 3; i++) {
-        //        this.atirar()
-        //    }
-        if (this.projeteisNoPente == 0)
-            console.log("Não ha balas, por favor recarregue");
-        else {
-            for (var i = 0; i < 3; i++) {
+    metralhadora.prototype.atirar = function () {
+        // for (let i = 0; i < 3; i++) {
+        //     this.atirar()
+        // }
+        for (var i = 0; i < this.tirosPorDisparo; i++) {
+            if (this.projeteisNoPente == 0) {
+                console.log("Não ha balas, por favor recarregue");
+                return;
+            }
+            else {
                 this.projeteisNoPente -= 1;
                 console.log("BANG");
             }
-            console.log("Você ainda tem " + this.projeteisNoPente + " balas em seu pente!");
         }
+        console.log("Você ainda tem " + this.projeteisNoPente + " balas em seu pente!");
     };
     return metralhadora;
 }(arma_1["default"]));
-exports.metralhadora = metralhadora;
+exports["default"] = metralhadora;
