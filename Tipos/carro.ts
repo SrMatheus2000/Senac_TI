@@ -1,4 +1,4 @@
-class carro {
+export default class carro {
     // private marca:string
     // private modelo:string
     // private ano:number
@@ -52,7 +52,7 @@ class carro {
     }
 }
 
-let carro1 = new carro(100, 10)
+// let carro1 = new carro(100, 10)
 
-carro1.acelerar(50);
-carro1.freiar(25);
+// carro1.acelerar(50);
+// carro1.freiar(25);

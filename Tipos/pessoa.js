@@ -1,3 +1,5 @@
+"use strict";
+exports.__esModule = true;
 var pessoa = /** @class */ (function () {
     function pessoa(nome, sobrenome, carro, arma) {
         this.nome = nome;
@@ -18,7 +20,8 @@ var pessoa = /** @class */ (function () {
     };
     return pessoa;
 }());
-var matheus = new pessoa("Matheus", "Wandscheer", "Kaddet", "Bazuca");
-matheus.dizerNome();
-console.log(matheus.informarArma());
-console.log(matheus.informarCarro());
+exports["default"] = pessoa;
+// let matheus = new pessoa("Matheus", "Wandscheer", "Kaddet", "Bazuca")
+// matheus.dizerNome()
+// console.log (matheus.informarArma())
+// console.log (matheus.informarCarro())

@@ -1,3 +1,5 @@
+"use strict";
+exports.__esModule = true;
 var carro = /** @class */ (function () {
     function carro(vMaxima, aceleracao) {
         this.velocidadeMaxima = vMaxima;
@@ -44,6 +46,7 @@ var carro = /** @class */ (function () {
     };
     return carro;
 }());
-var carro1 = new carro(100, 10);
-carro1.acelerar(50);
-carro1.freiar(25);
+exports["default"] = carro;
+// let carro1 = new carro(100, 10)
+// carro1.acelerar(50);
+// carro1.freiar(25);

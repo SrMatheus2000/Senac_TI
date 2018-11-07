@@ -1,4 +1,4 @@
-class pessoa {
+export default class pessoa {
     private nome:string
     private sobrenome:string
     private carro:string
@@ -26,7 +26,7 @@ class pessoa {
     }
 }
 
-let matheus = new pessoa("Matheus", "Wandscheer", "Kaddet", "Bazuca")
-matheus.dizerNome()
-console.log (matheus.informarArma())
-console.log (matheus.informarCarro())
+// let matheus = new pessoa("Matheus", "Wandscheer", "Kaddet", "Bazuca")
+// matheus.dizerNome()
+// console.log (matheus.informarArma())
+// console.log (matheus.informarCarro())

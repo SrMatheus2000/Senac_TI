@@ -1,3 +1,5 @@
+"use strict";
+exports.__esModule = true;
 var arma = /** @class */ (function () {
     function arma(projeteis, capacidade) {
         this.capacidade = capacidade;
@@ -20,5 +22,6 @@ var arma = /** @class */ (function () {
     };
     return arma;
 }());
-var pistola = new arma(10, 10);
-pistola.atirar();
+exports["default"] = arma;
+// let pistola = new arma(10, 10)
+// pistola.atirar()

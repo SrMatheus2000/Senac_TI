@@ -1,9 +1,9 @@
-class arma {
+export default class arma {
     // private calibre:string
     // private marca:string
     // private tipo:string
-    private capacidade:number
-    private projeteisNoPente:number
+    protected capacidade:number
+    protected projeteisNoPente:number
 
     constructor(projeteis:number, capacidade:number){
         this.capacidade = capacidade
@@ -29,5 +29,5 @@ class arma {
     }
 }
 
-let pistola = new arma(10, 10)
-pistola.atirar()
+// let pistola = new arma(10, 10)
+// pistola.atirar()
