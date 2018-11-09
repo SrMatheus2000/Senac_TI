@@ -2,33 +2,33 @@ export default class arma {
     // private calibre:string
     // private marca:string
     // private tipo:string
-    protected capacidade:number
-    protected projeteisNoPente:number
+    private capacidade: number;
+    private projeteisNoPente: number;
+    private tirosPorSegundo: number;
 
-    constructor(projeteis:number, capacidade:number){
-        this.capacidade = capacidade
-        this.projeteisNoPente = projeteis
+    constructor(projeteis: number, capacidade: number, tirosPorSegundo: number = 1) {
+        this.capacidade = capacidade;
+        this.projeteisNoPente = projeteis;
+        this.tirosPorSegundo = tirosPorSegundo;
     }
 
-    public atirar(N:number): void { 
-        if (this.projeteisNoPente == 0)
-            console.log("Não ha balas, por favor recarregue")
-        else {
-            this.projeteisNoPente -= N
-            console.log("BANG")
+    public atirar(disparos: number = 1): void {
+        for (let i = 0; i < disparos; i++) {
+            if (this.projeteisNoPente == 0) 
+                console.log("Não ha balas, por favor recarregue");
+            else {
+                this.projeteisNoPente -= this.tirosPorSegundo;
+                console.log("BANG");
+            }
         }
-        console.log("Você ainda tem " + this.projeteisNoPente + " balas em seu pente!")
+        console.log("Você tem " + this.projeteisNoPente + " balas em seu pente!");
     }
 
     public recarregar(): void {
-        this.projeteisNoPente = this.capacidade
+        this.projeteisNoPente = this.capacidade;
     }
 
     public informarBalas(): number {
-        return this.projeteisNoPente
+        return this.projeteisNoPente;
     }
 }
-//fazer tudo num metodo so
-
-// let pistola = new arma(10, 10)
-// pistola.atirar()
