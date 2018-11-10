@@ -117,12 +117,12 @@
           href="arquivos_aula/<?php echo ($nome_aula["arquivo"]);?>"
           target="_blank"
           style="
-          -webkit-appearance: button;
-          background-color: rgb(221,221,221);
-          color: black;
-          margin: 0 0 -8 0;
-          padding: 5 10;
-          text-align: center;"
+            -webkit-appearance: button;
+            background-color: rgb(221,221,221);
+            color: black;
+            margin: 0 0 -8 0;
+            padding: 5 10;
+            text-align: center;"
           id="visualizar">
           Visualizar Arquivo
         </a>
