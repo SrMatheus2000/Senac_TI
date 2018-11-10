@@ -1,4 +1,5 @@
 <form method="get" style="float: right;">
+  <input type="hidden" name="pagina_professor">
   <input class="btn" type="submit" name="nova_materia" value="Nova Matéria" />
 </form>
 <table class="table

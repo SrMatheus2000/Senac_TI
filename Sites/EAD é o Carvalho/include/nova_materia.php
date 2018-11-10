@@ -1,7 +1,8 @@
 <div class="container">
     <div class="box">
 <form method="get">
-    <input type="hidden" name="materias">
+    <input type="hidden" name="pagina_professor">
+    <input type="hidden" name="materias" value="Matérias">
     <input class="btn" type="submit" value="Voltar para Matérias" />
 </form>
 <center>
