@@ -1,0 +1,359 @@
+.item {
+  height: 100px;
+  width: 100px;
+  border: groove;
+  margin: 5px;
+}
+
+.item:hover {
+  box-shadow: 0 1px 20px #cccccc;
+}
+
+.btncategoria {
+  background-color: rgb(40, 40, 40);
+  color: #FFFFFF;
+  width: 100%;
+  margin: 1px;
+}
+
+.btncategoria:hover {
+  color: #FFFFFF;
+  box-shadow: 0 1px 20px #cccccc;
+}
+
+/* -------------------------------------------------- */
+
+/* /* /* Itens do Bruno */
+
+
+/* button carrinho */
+
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    cursor:pointer;
+}
+   input[type=number] {
+   -moz-appearance: textfield;
+   appearance: textfield;
+}
+
+
+/* */
+
+
+
+
+/* INICIO BARRA DE MENU */
+
+.BARRA_inicial {
+  overflow: hidden;
+  background-color: #4169E1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 1;
+}
+
+.BARRA_inicial a:hover {
+  background: #6495ED;
+}
+
+.logo {
+  width: 20%;
+  height: 60px;
+  margin-right: 10px;
+  float: left;
+}
+
+.Menu {
+  width: 15%;
+  background-color: #4169E1;
+  position: fixed;
+  margin-top: 52px;
+  left: 0;
+  padding-right: 6px;
+  z-index: 2;
+}
+
+.Menu a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 12px;
+}
+
+.Menu a:hover {
+  background-color: #6495ED;
+  color: white;
+  padding-right: 6px;
+}
+
+.Menu a.categoria {
+  background-color: #4CAF50;
+}
+
+.Procura {
+  float: left;
+  width: 50%;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.Procura input[type=text] {
+  padding: 6px;
+  margin-top: 12px;
+  font-size: 17px;
+  border: none;
+  width: 500px;
+  float: left;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  z-index: 1;
+}
+
+.Login {
+  float: left;
+  width: 20%;
+  height: 60px;
+}
+
+.Login a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding-top: 16px;
+  padding-right: 16px;
+  padding-left: 16px;
+  text-decoration: none;
+  font-size: 17px;
+  height: 60px;
+}
+
+.Login a:hover {
+  padding-bottom: 6px;
+}
+
+.carrinho {
+  float: left;
+  height: 60px;
+  width: 5%;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.carrinho a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  height: 60px;
+}
+
+.carrinho a:hover {
+  background-color: #f6b428;
+  border-radius: 5px;
+}
+
+.carrinho img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 30px;
+  width: 26px;
+  padding-top: 14px;
+}
+
+/*Menu Fixado*/
+
+.menu-fixo {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+}
+
+/* FIM BARRA DE MENU */
+
+/*------------------ PRIMEIRO MENU---------------------- */
+/* ----------------------------------------------------- */
+/* ------------SE RESOLUÇÃO FOR MENOR @media ----------- */
+
+@media only screen and (max-height: 740px){
+
+	.menu-cabecalho{
+		padding-bottom:5px;
+
+	}
+}
+
+@media only screen and (max-height: 710px){
+
+	.menu-cabecalho{
+		padding-bottom:10px;
+
+	}
+}
+
+@media only screen and (max-height: 690px){
+
+	.menu-cabecalho{
+		padding-bottom:15px;
+
+	}
+}
+
+@media only screen and (max-height: 620px){
+
+	.menu-cabecalho{
+		padding-bottom:20px;
+
+	}
+}
+
+@media only screen and (max-height: 560px){
+
+	.menu-cabecalho{
+		padding-bottom:25px;
+
+	}
+}
+
+@media only screen and (max-height: 480px){
+
+	.menu-cabecalho{
+		padding-bottom:30px;
+
+	}
+}
+
+@media only screen and (max-height: 410px){
+
+	.menu-cabecalho{
+		padding-bottom:35px;
+
+	}
+}
+
+@media only screen and (max-height: 350px){
+
+	.menu-cabecalho{
+		padding-bottom:40px;
+
+	}
+}
+
+@media only screen and (max-height: 250px){
+
+	.menu-cabecalho{
+		padding-bottom:45px;
+
+	}
+}
+
+@media only screen and (max-height: 170px){
+
+	.menu-cabecalho{
+		padding-bottom:50px;
+
+	}
+}
+/* ------------FIM @media ----------- */
+
+/*--------------- DIVs PRINCIPAIS ------------------------------*/
+
+.main {
+  margin-top: 60px;
+  padding-top: 53px;
+  height: 1500px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: justify;
+}
+
+.meio {
+  width: 70%;
+  height: 1500px;
+  float: left;
+  background-color: ;
+}
+
+.meio p {
+  margin: 10px;
+}
+
+.direita {
+  width: 15%;
+  height: 1500px;
+  float: left;
+}
+
+.direita p {
+  margin: 10px;
+}
+
+.esquerda {
+  width: 15%;
+  height: 1500px;
+  float: left;
+}
+
+.esquerda p {
+  margin: 10px;
+}
+
+.RODAPE {
+  BACKGROUND: #C0C0C0;
+  CLEAR: BOTH;
+}
+
+.ofertas {
+  width: 100%;
+  position: relative;
+}
+
+/* ----------------FIM DIVs PRINCIPAIS-------------------- */
+
+/* -------SLIDE MAIS PROCURADOS --------- */
+
+/* ----------------------------------------------------------- */
+
+.Produtos_Container {
+  float: left;
+}
+
+.Produtos {
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  float: left;
+  width: 250px;
+  height: 190px;
+  display: block;
+  border: 1px solid gray;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.Produtos a {
+  text-decoration: none;
+  color: black;
+}
+
+.Produtos:hover {
+  box-shadow: 0 0 20px #cccccc;
+}
+
+/* /* /* Itens do Bruno */
+
+/* -------------------------------------------------- */

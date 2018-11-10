@@ -1,0 +1,27 @@
+/* Slider Ofertas */
+
+.slide {
+  position: relative;
+}
+
+.btnDireito {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(0%, -50%);
+  -ms-transform: translate(-0%, -50%);
+  -webkit-transform: translate(-0%, -50%);
+  -moz-transform: translate(-0%, -50%);
+  -o-transform: translate(-0%, -50%);
+}
+
+.btnEsquerdo {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(0%, -50%);
+  -ms-transform: translate(-0%, -50%);
+  -webkit-transform: translate(-0%, -50%);
+  -moz-transform: translate(-0%, -50%);
+  -o-transform: translate(-0%, -50%);
+}

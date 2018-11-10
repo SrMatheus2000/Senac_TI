@@ -1,0 +1,89 @@
+.M_Proc {
+  width: 100%;
+  height: 250px;
+  padding-top: 9px;
+  overflow: hidden;
+}
+
+.MaisProcurados {
+  margin: 5px 0 5px 10px;
+  float: left;
+  width: 30%;
+  border: 1px solid gray;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.MaisProcurados:hover {
+  box-shadow: 0 0 20px #cccccc;
+}
+
+.MaisProcurados a {
+  text-decoration: none;
+  color: black;
+}
+
+.MaisProcurados img {
+  width: 50%;
+  float: left;
+  margin: 0 0 0 0;
+}
+
+.imgPRODUTO {
+  width:100%;
+  height: 125px;
+}
+
+.imgPRODUTO img {
+  width: 125px;
+  height: 125px;
+  border-radius: 15px;
+  margin-left: 27%;
+}
+
+.PRECO {
+  margin: 5px;
+  text-align: center;
+  padding: 15px 50px 5px 50px;
+  padding-top: 15px;
+  color: blue;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.PRECO a {
+  color: blue;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.CARRINHO_ADD {
+  text-align: center;
+  border: 1px solid;
+  font-size: 15px;
+  padding: 9px;
+  margin-left: 15%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  float: left;
+  border-radius: 25px;
+  z-index: 1;
+  text-decoration: none;
+  background-color: #DCDCDC;
+  color: black;
+}
+
+.CARRINHO_ADD:hover {
+  box-shadow: 0 0 20px #F0E68C;
+  background-color: yellow;
+}
+
+.TITULO {
+  text-align: center;
+  margin: 5px;
+  padding-top: 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+}
