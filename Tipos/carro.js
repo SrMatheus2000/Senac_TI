@@ -21,9 +21,8 @@ var carro = /** @class */ (function () {
             console.log("Você chegou na velocidade desejada de: " + vAceleracao + " Km/hora");
     };
     carro.prototype.freiar = function (vParada) {
-        if (vParada >= this.velocidadeAtual) {
+        if (vParada >= this.velocidadeAtual)
             console.log("Você não pode reduzir para uma velocidade mais alta!");
-        }
         else {
             while (this.velocidadeAtual > 0 && this.velocidadeAtual > vParada) {
                 this.velocidadeAtual -= this.velocidadeMaxima / 5;
@@ -33,12 +32,10 @@ var carro = /** @class */ (function () {
                     this.velocidadeAtual = vParada;
                 console.log("A velocidade atual é de: " + this.velocidadeAtual + " Km/hora");
             }
-            if (this.velocidadeAtual == 0) {
+            if (this.velocidadeAtual == 0)
                 console.log("Você Parou!");
-            }
-            else {
+            else
                 console.log("Você reduziu até a velocidade desejada de " + vParada + " Km/hora");
-            }
         }
     };
     carro.prototype.informarVelocidade = function () {

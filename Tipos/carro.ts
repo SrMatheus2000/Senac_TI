@@ -28,9 +28,9 @@ export default class carro {
     }
 
     public freiar(vParada:number): void {
-        if (vParada >= this.velocidadeAtual) {
+        if (vParada >= this.velocidadeAtual)
             console.log("Você não pode reduzir para uma velocidade mais alta!")
-        } else {
+        else {
             while (this.velocidadeAtual > 0 && this.velocidadeAtual > vParada) {
                 this.velocidadeAtual -= this.velocidadeMaxima / 5
                 if (this.velocidadeAtual <= 0)
@@ -39,11 +39,10 @@ export default class carro {
                     this.velocidadeAtual = vParada
                 console.log("A velocidade atual é de: " + this.velocidadeAtual + " Km/hora")
             }
-            if (this.velocidadeAtual == 0) {
+            if (this.velocidadeAtual == 0)
                 console.log("Você Parou!")
-            } else {
+            else 
                 console.log("Você reduziu até a velocidade desejada de " + vParada + " Km/hora")
-            }
         }
     }
 
