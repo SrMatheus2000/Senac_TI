@@ -8,8 +8,8 @@ export default class pessoa {
     /**
      * login
      */
-    public logar() {
-        
+    public logar(login:string) {
+        console.log("Bem Vindo" + login)
     }
 
     /**
@@ -19,6 +19,10 @@ export default class pessoa {
         
     }
 
-
-
+    /**
+     * deslogar
+     */
+    public deslogar() {
+        console.log("Você deslogou!")
+    }
 }

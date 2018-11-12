@@ -1,11 +1,19 @@
 import pessoa from "./pessoa";
+import operador from "./operador"
 
 export default class medico extends pessoa {
-    private senha_medico:string
+    private senha:string
 
     constructor(login:string, senha:string) {
         super(login)
-        this.senha_medico = senha;
+        this.senha = senha
+    }
+
+    /**
+     * login
+     */
+    public logar(login:string, senha:string) {
+        
     }
 
     /**
@@ -15,5 +23,10 @@ export default class medico extends pessoa {
         
     }
 
-
+    /**
+     * receitar
+     */
+    public receitar() {
+        
+    }
 }
