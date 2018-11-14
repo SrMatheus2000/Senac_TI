@@ -1,26 +1,27 @@
 "use strict";
-exports.__esModule = true;
-var pessoa = /** @class */ (function () {
-    function pessoa(login) {
+Object.defineProperty(exports, "__esModule", { value: true });
+class pessoa {
+    constructor(login) {
         this.login = login;
     }
     /**
      * login
      */
-    pessoa.prototype.logar = function (login) {
-        console.log("Bem Vindo" + login);
-    };
+    logar(login, senha = "") {
+        console.log("Bem Vindo " + login);
+    }
     /**
      * consultar_exame
      */
-    pessoa.prototype.consultar_exame = function () {
-    };
+    consultar_exame() {
+        console.log("Exame Consultado");
+    }
     /**
      * deslogar
      */
-    pessoa.prototype.deslogar = function () {
+    deslogar() {
+        // if (logado == true) 
         console.log("Você deslogou!");
-    };
-    return pessoa;
-}());
-exports["default"] = pessoa;
+    }
+}
+exports.default = pessoa;

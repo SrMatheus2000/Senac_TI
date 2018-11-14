@@ -3,4 +3,9 @@ import usuario from "./usuário"
 import medico from "./médico"
 import operador from "./operador"
 
-medico.logar("Matheus", "123")
+let cirurgiao = new medico("cir", "123")
+
+cirurgiao.logar("Matheus", "123");
+cirurgiao.deslogar()
+
+cirurgiao.logado = true

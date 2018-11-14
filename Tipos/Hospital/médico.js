@@ -1,34 +1,31 @@
 "use strict";
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-        return extendStatics(d, b);
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const pessoa_1 = __importDefault(require("./pessoa"));
+class medico extends pessoa_1.default {
+    constructor(login, senha) {
+        super(login);
+        this.logado = false;
+        this.senha = senha;
     }
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-exports.__esModule = true;
-var pessoa_1 = require("./pessoa");
-var medico = /** @class */ (function (_super) {
-    __extends(medico, _super);
-    function medico(login, senha) {
-        return _super.call(this, login) || this;
+    /**
+     * login
+     */
+    logar(login, senha) {
+        let logado = true;
+        console.log("Bem Vindo médico " + login);
     }
     /**
      * consultar_agenda
      */
-    medico.prototype.consultar_agenda = function () {
-    };
+    consultar_agenda() {
+    }
     /**
      * receitar
      */
-    medico.prototype.receitar = function () {
-    };
-    return medico;
-}(pessoa_1["default"]));
-exports["default"] = medico;
+    receitar() {
+    }
+}
+exports.default = medico;

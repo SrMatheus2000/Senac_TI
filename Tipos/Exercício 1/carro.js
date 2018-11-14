@@ -1,12 +1,12 @@
 "use strict";
-exports.__esModule = true;
-var carro = /** @class */ (function () {
-    function carro(vMaxima, aceleracao) {
+Object.defineProperty(exports, "__esModule", { value: true });
+class carro {
+    constructor(vMaxima, aceleracao) {
         this.velocidadeMaxima = vMaxima;
         this.aceleracao = aceleracao;
         this.velocidadeAtual = 0;
     }
-    carro.prototype.acelerar = function (vAceleracao) {
+    acelerar(vAceleracao) {
         while (this.velocidadeAtual < vAceleracao && this.velocidadeAtual < this.velocidadeMaxima) {
             this.velocidadeAtual += this.aceleracao;
             if (this.velocidadeAtual >= this.velocidadeMaxima)
@@ -19,8 +19,8 @@ var carro = /** @class */ (function () {
             console.log("Você chegou na velocidade máxima de: " + this.velocidadeMaxima + " Km/hora");
         else
             console.log("Você chegou na velocidade desejada de: " + vAceleracao + " Km/hora");
-    };
-    carro.prototype.freiar = function (vParada) {
+    }
+    freiar(vParada) {
         if (vParada >= this.velocidadeAtual)
             console.log("Você não pode reduzir para uma velocidade mais alta!");
         else {
@@ -37,13 +37,12 @@ var carro = /** @class */ (function () {
             else
                 console.log("Você reduziu até a velocidade desejada de " + vParada + " Km/hora");
         }
-    };
-    carro.prototype.informarVelocidade = function () {
+    }
+    informarVelocidade() {
         return this.velocidadeAtual;
-    };
-    return carro;
-}());
-exports["default"] = carro;
+    }
+}
+exports.default = carro;
 // let carro1 = new carro(100, 10)
 // carro1.acelerar(50);
 // carro1.freiar(25);

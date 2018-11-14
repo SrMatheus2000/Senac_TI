@@ -3,6 +3,7 @@ import operador from "./operador"
 
 export default class medico extends pessoa {
     private senha:string
+    public logado:boolean = false
 
     constructor(login:string, senha:string) {
         super(login)
@@ -13,7 +14,8 @@ export default class medico extends pessoa {
      * login
      */
     public logar(login:string, senha:string) {
-        
+        let logado = true
+        console.log("Bem Vindo médico " + login);
     }
 
     /**
