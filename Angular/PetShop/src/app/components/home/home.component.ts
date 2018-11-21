@@ -31,20 +31,10 @@ export class MainComponent {
   //     this.imagem = this.caminhoIMG + "cerebro.jpg"
   // }
   texto1 = "Olá Mundo"
-  texto2 = this.texto1
+  texto2 = ""
+
   disparar(valor: Event){
-    // console.log(this.a);
-    // console.log(valor);
-    if (valor["data"] === null) {
-      this.texto1 = this.texto2.substr(0, this.texto2.length - 1);
-      this.texto2 = this.texto2.substr(0, this.texto2.length-1);
-    } else {
-      this.texto1 += valor["data"];
-      this.texto2 += valor["data"];
-    }
-    // this.texto2 = valor
+    console.log((<HTMLInputElement>valor.target).value)
+    this.texto2 = (<HTMLInputElement>valor.target).value;
   }
-
-
-
 }
