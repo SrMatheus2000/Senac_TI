@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: "app-esquerdo",
@@ -6,4 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ["./esquerdo.component.css"]
 })
 
-export class LeftComponent {}
+export class LeftComponent {
+  @Input() public numero: number
+}

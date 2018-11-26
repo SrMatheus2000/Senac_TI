@@ -1,6 +1,6 @@
 <div class="direito">
-    <app-direito></app-direito>
+    <app-direito (definirTexto)="filhoPai($event)"></app-direito>
 </div>
 <div class="esquerdo">
-    <app-esquerdo></app-esquerdo>
+    <app-esquerdo [numero]=variavelDoMain></app-esquerdo>
 </div>

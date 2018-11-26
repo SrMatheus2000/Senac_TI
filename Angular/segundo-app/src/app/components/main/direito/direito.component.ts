@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: "app-direito",
@@ -6,4 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ["./direito.component.css"]
 })
 
-export class RightComponent {}
+export class RightComponent {
+  @Output() public textoNoMain = new EventEmitter
+
+  filhoPai(){
+	  this.textoNoMain.emit("Texto Emitido")
+  }
+}
