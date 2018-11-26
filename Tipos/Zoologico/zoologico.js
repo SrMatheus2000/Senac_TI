@@ -1,15 +1,16 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-class zoologico {
-    constructor(end, list) {
+exports.__esModule = true;
+var zoologico = /** @class */ (function () {
+    function zoologico(end, list) {
         this.endereco = end;
         this.listaDeAnimais = list;
     }
-    mostrarEndereco() {
+    zoologico.prototype.mostrarEndereco = function () {
         return this.endereco;
-    }
-    mostrarLista() {
+    };
+    zoologico.prototype.mostrarLista = function () {
         return this.listaDeAnimais;
-    }
-}
-exports.default = zoologico;
+    };
+    return zoologico;
+}());
+exports["default"] = zoologico;

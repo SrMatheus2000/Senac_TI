@@ -1,5 +1,12 @@
 import animal from "./animal"
-import zoologico from "./zoologico";
+import zoologico from "./zoologico"
+import anfibio from "./anfibio"
+import ave from "./ave"
+import mamifero from "./mamifero"
+import peixes from "./peixe"
+import platelminto from "./platelminto"
+import poriferos from "./porifero"
+import reptil from "./reptil"
 
 let animais: animal[] = []
 // let animais = []
