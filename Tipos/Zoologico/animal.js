@@ -1,10 +1,11 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-class animal {
-    constructor(nome, dentes, olhos) {
+exports.__esModule = true;
+var animal = /** @class */ (function () {
+    function animal(nome, dentes, olhos) {
         this.nome = nome;
         this.quantidadeDeDentes = dentes;
         this.quantidadeDeOlhos = olhos;
     }
-}
-exports.default = animal;
+    return animal;
+}());
+exports["default"] = animal;
