@@ -1,3 +1,13 @@
-<p>
-  direito works!
-</p>
+<p>{{numero}}</p>
+
+<p>Nome:</p>
+<input type="text" name="nome" id="nome">
+<p>Sobrenome:</p>
+<input type="text" name="sobrenome" id="sobrenome" [value]="sobrenome">
+<input type="button" value="Enviar" name="enviar" id="enviar" (click)="enviar()">
+
+<ul>
+  <li *ngFor="let nome of nomes">
+    {{nome.nome}} {{nome.sobrenome}}
+  </li>
+</ul>
