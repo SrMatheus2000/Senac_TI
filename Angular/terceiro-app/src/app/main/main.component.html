@@ -1,0 +1,24 @@
+<div style="width: 50%; float: left; background-color:bisque">
+    Nome:<br>
+    <input type='text' (input)="definirNome($event)" [value]=pessoa.Nome><br>
+    Sobrenome:<br>
+    <input type='text' (input)="definirSobrenome($event)" [value]=pessoa.Sobrenome><br>
+    <button (click)="enviarCadastro()">Enviar</button>
+    <!-- usando ngFor para listar o array(conjunto) de pessoas
+    sintaxe: let (nome que vou usar dentro do html para manipular o objeto do array) of (nome do array dentro do arquivo ts)-->
+    <li *ngFor="let pessoa of pessoas">
+    <!-- no caso quero exibir a propriedade nome do meu objeto, que aqui no html declarei como pessoa
+    neste caso usamos o string interpolation. Como vimos na orientação a objetos, para exibir a propriedade de um objeto
+    colocamos o nome do objeto.propriedade, como feito logo abaixo-->  
+    {{pessoa.Nome}}
+    {{pessoa.Sobrenome}}
+    <!-- O ngFor se encarrega de exibir TODOS objetos do CONJUNTO(array) declarado na sua sintaxe-->
+    </li>
+</div>
+
+<div style="width: 50%; float: right; background-color: aquamarine">
+  <!--Componente filho sub main, onde estou atribuindo a varíável do pai numeroArray(depois do sinal de =)
+  e antes a varíavel de input do filho dentro de [] chamada NumeroDePessoas
+  atenção: deve ser com o mesmo nome na declaração do filho, copie e cole O MESMO NOME da variável declarada no Input-->
+  <app-sub-main [NumeroDePessoas]=numeroArray></app-sub-main>
+</div>
