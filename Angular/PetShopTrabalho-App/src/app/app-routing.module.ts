@@ -20,5 +20,5 @@ export const RotaConstante: Routes = [
   { path: "inicio", component: InicioComponent },
   { path: "produtos", component: ProdutosComponent },
   { path: "servicos", component: ServicosComponent },
-  { path: "**", redirectTo: "first" }
+  { path: "**", redirectTo: "inicio" }
 ];
