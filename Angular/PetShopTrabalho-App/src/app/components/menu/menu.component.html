@@ -1,7 +1,44 @@
-<p>
-<button [routerLink]="['inicio']">Inicio </button>
-<button [routerLink]="['galeria']">Galeria </button>
-<button [routerLink]="['produtos']">Produtos </button>
-<button [routerLink]="['servicos']">Servicos </button>
-<button [routerLink]="['contato']">Contato </button>
-</p>
+<!-- <p> -->
+<div class="menu container-fluid  justify-content-md-center">
+    <div class="container">
+        <div class="row">
+            <!-- Início -->
+            <div class="col-md">
+                <div class="btnhome">
+                    <button [routerLink]="['inicio']">
+                        <img src="assets/home.png" alt="Início" title="Início" height="25px"/> 
+                    </button>
+                </div>
+            </div>
+
+            <!-- Serviços -->
+            <div class="col-md">
+                <div class="btnservicos">
+                    <button [routerLink]="['galeria']">Galeria </button>
+                </div>
+            </div>
+
+            <!-- Produtos -->
+            <div class="col-md">
+                <div class="btnprodutos">
+                    <button [routerLink]="['produtos']">Produtos </button>
+                </div>
+            </div>
+
+            <!-- Galeria -->
+            <div class="col-md">
+                <div class="btngaleria">
+                    <button [routerLink]="['servicos']">Servicos </button>
+                </div>
+            </div>
+
+            <!-- Contato -->
+            <div class="col-md">
+                <div class="btncontato">
+                    <button [routerLink]="['contato']">Contato </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- </p> -->
