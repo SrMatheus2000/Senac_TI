@@ -1,0 +1,24 @@
+.header{
+    height: 150px;
+    background: #000;
+}
+
+img{
+    height: 60%;
+}
+
+/* .img1{
+    float: left;
+}
+
+.img2{
+    float: right;
+} */
+
+h1{
+    font-family: 'OldLondon';
+    text-shadow: -1px 0 #bf0000, 0 1px #bf0000, 1px 0 #bf0000, 0 -1px #bf0000;
+    font-size: 80px;
+    text-align: center;
+    margin-top: 40px;
+}

@@ -1,0 +1,9 @@
+.black{
+    background: #400000;
+    height: 100vh;
+}
+
+.fundo{
+    background-image: url("../assets/img/background.jpg");
+    height: 100vh;
+}

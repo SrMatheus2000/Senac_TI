@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: OldLondon;
+    src: url(assets/font/OldLondon.ttf);
+}
+
+.cabecalho {
+  height: auto;
+  background: rgb(0, 0, 0);
+}
+
+.fundo {
+  /* background-image: url('../img/bg-pet.jpg'); */
+}
+
+.rodape {
+  height: 100px;
+  background: rgb(0, 0, 0);
+  bottom: 0;
+  text-align: center;
+  /* position: -webkit-sticky; */
+  position: absolute;
+}
+
+.titulo {
+  color: #FFF;
+  font-size: 75px;
+}
+
+.texto {
+  text-align: justify;
+  text-shadow: 1px 1px green;
+}

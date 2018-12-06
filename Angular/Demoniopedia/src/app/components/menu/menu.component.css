@@ -1,0 +1,47 @@
+/* home */
+.menu {
+    height: 60px;
+    background: rgb(0, 0, 0);
+}
+
+.menu p {
+    width: 100%;
+    /* height: 40px; */
+    font-family: 'OldLondon';
+    color: #000;
+    font-size: 33px;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    /* margin-top: -15px; */
+}
+
+button{
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    color: #FFF;
+    font-weight: bold;
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.btn_menu {
+    border-bottom: #400000 5px solid;
+    height: 50px;
+    transition: 0.5s;
+    margin: 5px 0;
+}
+
+.btn_menu button {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 16;
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.btn_menu:hover {
+    border-bottom: #400000 50px solid;
+}
