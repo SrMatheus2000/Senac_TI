@@ -1,3 +1,20 @@
-<p>
-  produtos works!
-</p>
+<ul>
+  <li *ngFor="let produto of produtos" style="list-style-type: none;">
+      <div style="width: 250px; height: 280px; background: darkgrey;">
+        <div style="width: 90%; height: 75%;">
+          <img src="" alt="">
+        </div>
+        <h4 style="text-align: center;">
+          {{produto.id}}
+          {{produto.nome}}
+        </h4>
+        <p>
+          Valor:
+          {{produto.valor}}
+          <a [routerLink]="[ '/produtos', produto.id ]">Mais...</a>
+        </p>
+      </div>
+      <!-- {{produto.descricao}} -->
+      <br>
+  </li>
+</ul>
