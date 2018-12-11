@@ -1,6 +1,6 @@
-<ul>
+<!-- <ul>
   <li *ngFor="let produto of produtos" style="list-style-type: none;">
-      <div style="width: 250px; height: 280px; background: darkgrey;">
+      <div class="container" style="width: 280px; height: 300px; background: darkgrey; float: left; margin: 10px 10px;">
         <div style="width: 90%; height: 75%;">
           <img src="" alt="">
         </div>
@@ -8,13 +8,38 @@
           {{produto.id}}
           {{produto.nome}}
         </h4>
-        <p>
-          Valor:
-          {{produto.valor}}
+        <p style="text-align: left;">
+          Valor: {{produto.valor}}
           <a [routerLink]="[ '/produtos', produto.id ]">Mais...</a>
         </p>
       </div>
-      <!-- {{produto.descricao}} -->
-      <br>
+      {{produto.descricao}}
   </li>
-</ul>
+</ul> -->
+
+
+<li *ngFor="let produto of produtos" style="list-style-type: none;">
+  <div class="container" style="width: auto; height: auto; background: darkgrey; float: left; margin: 10px 10px;">
+    <div class="row">
+      <div class="col">
+        <img src="" alt="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h4 style="text-align: center;">
+          {{produto.id}}
+          {{produto.nome}}
+        </h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <p style="text-align: left;">
+          Valor: {{produto.valor}}
+          <a [routerLink]="[ '/produtos', produto.id ]">Mais...</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</li>

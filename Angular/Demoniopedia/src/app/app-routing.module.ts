@@ -5,6 +5,7 @@ import { InicioComponent } from './components/inicio/inicio.component';
 import { ProdutosComponent } from './components/produtos/produtos.component';
 import { ServicosComponent } from './components/servicos/servicos.component';
 import { ProdutoComponent } from './components/produtos/produto/produto.component';
+import { ServicoComponent } from './components/servicos/servico/servico.component';
 
 const routes: Routes = [];
 
@@ -19,6 +20,7 @@ export const RotaConstante: Routes = [
   { path: "produtos", component: ProdutosComponent },
   { path: "produtos/:id", component: ProdutoComponent },
   { path: "servicos", component: ServicosComponent },
+  { path: "servicos/:id", component: ServicoComponent },
   { path: "contato", component: ContatoComponent },
   { path: "**", redirectTo: "inicio" }
 ];

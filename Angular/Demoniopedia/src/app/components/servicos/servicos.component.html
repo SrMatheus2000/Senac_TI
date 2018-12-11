@@ -1,3 +1,25 @@
-<p>
-  servicos works!
-</p>
+<li *ngFor="let servico of servicos" style="list-style-type: none;">
+  <div class="container" style="width: auto; height: auto; background: darkgrey; float: left; margin: 10px 10px;">
+    <div class="row">
+      <div class="col">
+        <img src="" alt="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h4 style="text-align: center;">
+          {{servico.id}}
+          {{servico.nome}}
+        </h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <p style="text-align: left;">
+          Valor: {{servico.valor}}
+          <a [routerLink]="[ '/servicos', servico.id ]">Mais...</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</li>

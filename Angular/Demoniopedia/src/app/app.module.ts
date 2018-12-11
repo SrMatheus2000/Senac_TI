@@ -12,6 +12,7 @@ import { ProdutosComponent } from './components/produtos/produtos.component';
 import { ServicosComponent } from './components/servicos/servicos.component';
 import { RouterModule } from '@angular/router';
 import { ProdutoComponent } from './components/produtos/produto/produto.component';
+import { ServicoComponent } from './components/servicos/servico/servico.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ProdutoComponent } from './components/produtos/produto/produto.componen
     InicioComponent,
     ProdutosComponent,
     ServicosComponent,
-    ProdutoComponent
+    ProdutoComponent,
+    ServicoComponent
   ],
   imports: [
     BrowserModule,

@@ -27,6 +27,42 @@ export class ProdutosService {
             nome: 'Pentagrama Invertido',
             descricao: 'Colar Punitu',
             valor: 'Bem Acessivel'
+        },
+        {
+            id: 5,
+            nome: 'Biblia Satânica',
+            descricao: 'Livrinhu',
+            valor: 'Vale a pena'
+        },
+        {
+            id: 6,
+            nome: 'Escrituras Satânicas',
+            descricao: 'Outro Livrinhu',
+            valor: 'Bem top'
+        },
+        {
+            id: 7,
+            nome: 'Anel de Baphomet',
+            descricao: 'Anel Punitu',
+            valor: 'Bem loko'
+        },
+        {
+            id: 8,
+            nome: 'Poster Baphomet',
+            descricao: 'Poster Punitu',
+            valor: 'Caro'
+        },
+        {
+            id: 9,
+            nome: 'Colar Brimstone',
+            descricao: 'Colar foda',
+            valor: 'Bem lecal'
+        },
+        {
+            id: 10,
+            nome: 'Bolsa Demônio',
+            descricao: 'Bengay',
+            valor: 'Meio Caro'
         }
     ]
     
