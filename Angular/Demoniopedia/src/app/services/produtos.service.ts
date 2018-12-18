@@ -8,61 +8,71 @@ export class ProdutosService {
             id: 1,
             nome: 'Estatua de Baphomet',
             descricao: 'Estatua de Baphomet em bronze, chique chique',
-            valor: 'Caro, Muito Caro'
+            valor: 'Caro, Muito Caro',
+            imagem: 'assets/img/produtos/estatua.jpg'
         },
         {
             id: 2,
             nome: 'Camiseta de Bode',
             descricao: 'Bodinhu =3',
-            valor: 'Não tão caro assim'
+            valor: 'Não tão caro assim',
+            imagem: 'assets/img/produtos/camiseta.jpg'
         },
         {
             id: 3,
             nome: 'Grimório',
             descricao: 'Livro fodão',
-            valor: 'Meio Caro'
+            valor: 'Meio Caro',
+            imagem: 'assets/img/produtos/grimorio.jpg'
         },
         {
             id: 4,
             nome: 'Pentagrama Invertido',
             descricao: 'Colar Punitu',
-            valor: 'Bem Acessivel'
+            valor: 'Bem Acessivel',
+            imagem: 'assets/img/produtos/pentagrama.jpg'
         },
         {
             id: 5,
             nome: 'Biblia Satânica',
             descricao: 'Livrinhu',
-            valor: 'Vale a pena'
+            valor: 'Vale a pena',
+            imagem: 'assets/img/produtos/biblia.jpg'
         },
         {
             id: 6,
             nome: 'Escrituras Satânicas',
             descricao: 'Outro Livrinhu',
-            valor: 'Bem top'
+            valor: 'Bem top',
+            imagem: 'assets/img/produtos/escrituras.jpg'
         },
         {
             id: 7,
             nome: 'Anel de Baphomet',
             descricao: 'Anel Punitu',
-            valor: 'Bem loko'
+            valor: 'Bem loko',
+            imagem: 'assets/img/produtos/anel.jpg'
         },
         {
             id: 8,
             nome: 'Poster Baphomet',
             descricao: 'Poster Punitu',
-            valor: 'Caro'
+            valor: 'Caro',
+            imagem: 'assets/img/produtos/poster.jpg'
         },
         {
             id: 9,
             nome: 'Colar Brimstone',
             descricao: 'Colar foda',
-            valor: 'Bem lecal'
+            valor: 'Bem lecal',
+            imagem: 'assets/img/produtos/brimstone.jpg'
         },
         {
             id: 10,
             nome: 'Bolsa Demônio',
             descricao: 'Bengay',
-            valor: 'Meio Caro'
+            valor: 'Meio Caro',
+            imagem: 'assets/img/produtos/bolsa.jpg'
         }
     ]
     

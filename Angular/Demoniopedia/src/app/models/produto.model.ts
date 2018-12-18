@@ -3,4 +3,5 @@ export class Produto {
     public nome
     public descricao
     public valor
+    public imagem
 }
