@@ -13,6 +13,7 @@ import { ServicosComponent } from './components/servicos/servicos.component';
 import { RouterModule } from '@angular/router';
 import { ProdutoComponent } from './components/produtos/produto/produto.component';
 import { ServicoComponent } from './components/servicos/servico/servico.component';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -30,9 +31,10 @@ import { ServicoComponent } from './components/servicos/servico/servico.componen
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpModule,
     RouterModule.forRoot(RotaConstante)
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

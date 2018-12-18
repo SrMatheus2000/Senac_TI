@@ -17,10 +17,20 @@ export class ProdutoComponent implements OnInit {
     private produtosService: ProdutosService
   ) {}
 
+  // ngOnInit() {
+  //   this.produto = this.produtosService.getProdutoPorId(
+  //     this.route.snapshot.params["id"]
+  //   );
+  //   // console.log(this.produto)
+  // }
+
   ngOnInit() {
-    this.produto = this.produtosService.getProdutoPorId(
+    this.produtosService.getProdutoPorIdAPI(
       this.route.snapshot.params["id"]
-    );
+    ).then((prod: Produto) => {
+      console.log(prod)
+      this.produto = prod[0]
+    });
     // console.log(this.produto)
   }
 }

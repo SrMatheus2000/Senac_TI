@@ -11,11 +11,21 @@ import { ProdutosService } from 'src/app/services/produtos.service';
 export class ProdutosComponent implements OnInit {
 
   public produtos: Produto[]
+  public promises: Promise<Produto[]>
 
   constructor(private produtosService: ProdutosService) {}
 
   ngOnInit() {
-    this.produtos = this.produtosService.getProdutos()
+    // this.produtos = this.produtosService.getProdutos();
+    // this.promises = this.produtosService.getProdutosPromise();
+    
+    this.produtosService.getProdutosPromise().then(
+      (prod:Produto[]) => {
+        this.produtos = prod
+      }, (erro: any) => {
+        console.log(erro)
+      }
+    )
   }
 
 }
