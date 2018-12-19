@@ -11,11 +11,11 @@ import { ActivatedRoute } from "@angular/router"
 })
 export class ProdutoComponent implements OnInit {
   public produto: Produto;
-
+  
   constructor(
     private route: ActivatedRoute,
     private produtosService: ProdutosService
-  ) {}
+    ) {}
 
   // ngOnInit() {
   //   this.produto = this.produtosService.getProdutoPorId(
