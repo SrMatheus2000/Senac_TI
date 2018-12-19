@@ -15,7 +15,13 @@ export class ServicosComponent implements OnInit {
   constructor(private servicosService: ServicosService) { }
 
   ngOnInit() {
-    this.servicos = this.servicosService.getServicos()
+    this.servicosService.getServicosPromise().then(
+      (prod: Servico[]) => {
+        this.servicos = prod;
+      }, (erro: any) => {
+        console.log(erro)
+      }
+    )
   }
 
 }

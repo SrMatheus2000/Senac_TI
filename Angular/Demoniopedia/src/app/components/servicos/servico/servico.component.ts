@@ -18,9 +18,11 @@ export class ServicoComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.servico = this.servicosService.getServicoPorId(
-      this.route.snapshot.params["id"]
-    );
-    // console.log(this.servico)
+    this.servicosService
+      .getServicoPorIdAPI(this.route.snapshot.params["id"])
+      .then((prod: Servico) => {
+        console.log(prod);
+        this.servico = prod[0];
+      });
   }
 }

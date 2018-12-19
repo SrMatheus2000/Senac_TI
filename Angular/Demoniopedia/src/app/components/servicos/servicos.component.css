@@ -5,3 +5,13 @@ p{
 li{
     color: white;
 }
+
+.item{
+    padding: 5px;
+    display: block;
+    width: auto;
+    height: auto;
+    background: rgba(169, 169, 169, 0.5);
+    float: left;
+    margin: 10px 10px;
+}

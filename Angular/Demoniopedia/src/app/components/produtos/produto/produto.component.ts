@@ -17,13 +17,6 @@ export class ProdutoComponent implements OnInit {
     private produtosService: ProdutosService
     ) {}
 
-  // ngOnInit() {
-  //   this.produto = this.produtosService.getProdutoPorId(
-  //     this.route.snapshot.params["id"]
-  //   );
-  //   // console.log(this.produto)
-  // }
-
   ngOnInit() {
     this.produtosService.getProdutoPorIdAPI(
       this.route.snapshot.params["id"]
@@ -31,6 +24,5 @@ export class ProdutoComponent implements OnInit {
       console.log(prod)
       this.produto = prod[0]
     });
-    // console.log(this.produto)
   }
 }
